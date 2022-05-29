@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "currency_ex",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
