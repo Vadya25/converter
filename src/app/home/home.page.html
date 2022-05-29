@@ -1,0 +1,67 @@
+<ion-header>
+
+  <ion-toolbar color="primary">
+    <ion-title>
+      <h1>
+        <a href="/" title="Currency Converter Home">
+          <img src="assets/uah-logo.svg" alt="" width="36" height="36" />
+          <span>Currency<br />Converter</span>
+        </a>
+      </h1>
+    </ion-title>
+
+    <ion-title>
+      <div class="rates">
+        <span *ngFor="let currency of currencies">
+          {{ currency.name }}
+          <br />
+          {{ currency.rate }}
+        </span>
+      </div>
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="primary" scrollY="false" >
+
+  <div class="wrapper">
+
+    <!-- top currency selector -->
+    <div class="actions-container">
+      <ion-select (ionChange)="currencyChanged($event, true)" class="actions-container-selector" [placeholder]="topSelectedCurrency.name" interface="action-sheet" [value]="topSelectedCurrency.numericCode">
+        <ion-select-option *ngFor="let currency of currencies" [value]="currency.numericCode"> {{ currency.name }} </ion-select-option>
+      </ion-select>
+    </div>
+
+    <!-- top amount input -->
+    <div class="amount-container">
+      <div class="money">
+        <ion-input class="money-input" type="text" (ionChange)="valueChanged($event)" (ionInput)="valueInput($event, true)" clearInput
+          pattern="^\d{1,3}(,?\d{3})*(\.\d{2})?$" [value]="topValue" autofocus autocomplete="off" placeholder="Amount"
+          inputmode="numeric"></ion-input>
+      </div>
+    </div>
+
+    <div class="actions-logo">
+      <img src="assets/currency_arrows.svg" alt="" width="50" height="50" />
+    </div>
+
+    <!-- bottom amount input -->
+    <div class="amount-container">
+      <div class="money">
+        <ion-input class="money-input" type="text" (ionInput)="valueInput($event)" (ionChange)="valueChanged($event)" clearInput
+          pattern="^\d{1,3}(,?\d{3})*(\.\d{2})?$" [value]="bottomValue" autofocus autocomplete="off"
+          placeholder="Amount" inputmode="numeric"></ion-input>
+      </div>
+    </div>
+
+    <!-- bottom currency selector -->
+    <div class="actions-container">
+      <ion-select (ionChange)="currencyChanged($event)" class="actions-container-selector" [placeholder]="bottomSelectedCurrency.name" interface="action-sheet" [value]="bottomSelectedCurrency.numericCode">
+        <ion-select-option *ngFor="let currency of currencies" [value]="currency.numericCode"> {{ currency.name }} </ion-select-option>
+      </ion-select>
+    </div>
+  </div>
+
+</ion-content>

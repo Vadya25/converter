@@ -1,0 +1,128 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin: 0px 0px 24px 0px;
+  padding-top: 24px;
+}
+
+.rates {
+  font-size: 0.7em;
+  display: flex;
+  white-space: normal;
+  margin-bottom: 16px;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 span {
+  padding-left: 16px;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  margin-top: 50px;
+}
+
+/* amount input */
+.money {
+  position: relative;
+  margin: 16px;
+
+  &-input {
+    font-family: inherit;
+    font-size: 9vh;
+    line-height: 1.15;
+    margin: 0;
+    width: 90vw;
+    max-width: 960px;
+    font-weight: 300;
+    text-align: center;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    border-radius: 8px;
+    --placeholder-color: color: rgba(255, 255, 255, 0.397);
+  }
+  
+  &-input:focus {
+    outline: none;
+    border: 1px solid #fff;
+  }
+  
+  &-input::placeholder {
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.397);
+  }
+}
+
+.amount-container {
+  text-align: center;
+}
+
+
+/* selector */
+.actions-container {
+  position: relative;
+  text-align: center;
+
+  &-selector {
+    width: fit-content;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 6px;
+    border: 1px solid #dadce0;
+    padding-right: 8px;
+  }
+
+}
+
+.actions-logo {
+  margin-top: 16px;
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.54);
+  font-weight: 400;
+  text-align: right;
+  height: 20px;
+}
+
+footer p {
+  padding: 16px;
+  margin: 0px;
+}
+
+/* 0.75rem(12px) @ 20rem(320px) increasing to 1rem(16px) @ 120rem(1920px) */
+@media (min-width: 20rem) {
+  footer p  {
+    font-size: calc(0.75rem + ((1vw - 0.2rem) * 0.25));
+    /* Where: * 0.25 = 100 * font_Size_Difference / viewport_Width_Difference */
+  }
+}
+/* Prevent font scaling beyond this breakpoint */
+@media (min-width: 120rem) {
+  footer p  {
+    font-size: 1rem;
+  }
+}

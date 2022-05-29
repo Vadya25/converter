@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 450 450" lang="en" role="graphics-symbol" tabindex="0" id="img-uah" xmlns="http://www.w3.org/2000/svg">
+  <desc>Ukrainian Hryvnia Currency Symbol</desc>
+  <defs>
+    <linearGradient id="gradient-0" gradientUnits="userSpaceOnUse" x1="225" y1="25" x2="225" y2="220" spreadMethod="reflect" gradientTransform="matrix(1, 0, 0, 1, -0.000002, 1.199605)">
+      <stop offset="0" style="stop-color: rgb(0, 42, 75);"/>
+      <stop offset="1" style="stop-color: rgb(0, 100, 177);"/>
+    </linearGradient>
+    <linearGradient id="gradient-1" gradientUnits="userSpaceOnUse" x1="225" y1="25" x2="225" y2="220" spreadMethod="reflect" gradientTransform="matrix(1, 0, 0, 1, -0.000002, 1.199605)">
+      <stop offset="0" style="stop-color: rgb(0, 42, 75);"/>
+      <stop offset="1" style="stop-color: rgb(0, 100, 177);"/>
+    </linearGradient>
+    <linearGradient id="gradient-2" gradientUnits="userSpaceOnUse" x1="225" y1="230" x2="225" y2="425" spreadMethod="reflect" gradientTransform="matrix(1, 0, 0, 1, -0.000002, -0.000033)">
+      <stop offset="0" style="stop-color: rgba(255, 187, 0, 1)"/>
+      <stop offset="1" style="stop-color: rgba(153, 112, 0, 1)"/>
+    </linearGradient>
+    <linearGradient id="gradient-4" gradientUnits="userSpaceOnUse" x1="225" y1="230" x2="225" y2="425" gradientTransform="matrix(1, 0, 0, 1, -0.000002, -0.000033)">
+      <stop offset="0" style="stop-color: rgba(255, 187, 0, 1)"/>
+      <stop offset="1" style="stop-color: rgba(153, 112, 0, 1)"/>
+    </linearGradient>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, -0.431862)">
+    <title>UA Flag - Blue on Yellow</title>
+    <path d="M 225 25 C 335 25 425 115 425 225 L 265 225 C 275 215 285 215 295 210 L 375 210 L 375 200 L 320 200 C 355 185 375 170 375 150 C 375 125 300 50 225 50 C 150 50 100 100 100 100 L 125 100 C 125 100 160 65 225 65 C 300 65 360 135 360 150 C 360 170 325 185 295 200 L 75 200 L 75 210 L 265 210 C 250 215 245 215 235 225 L 25 225 C 25 115 115 25 225 25 Z" style="stroke-width: 3; fill: url(#gradient-0); stroke: url(#gradient-1); stroke-opacity: 0.7; fill-rule: evenodd;">
+      <title>UA Flag - Blue</title>
+    </path>
+    <path d="M 225 425 C 115 425 25 335 25 230 L 210 230 C 200 235 185 235 175 240 L 75 240 L 75 250 L 150 250 C 110 265 75 275 75 300 C 75 325 150 400 225 400 C 300 400 350 350 350 350 L 325 350 C 325 350 285 385 225 385 C 165 385 90 325 90 300 C 90 285 130 265 180 250 L 375 250 L 375 240 L 210 240 C 220 235 235 235 245 230 L 425 230 C 425 335 335 425 225 425 Z M 225 400 C 225 400 225 400 225 400 C 225 400 225 400 225 400 Z" style="stroke-width: 3; fill: url(#gradient-2); stroke: url(#gradient-4); stroke-opacity: 0.7;">
+      <title>UA Flag - Yellow</title>
+    </path>
+  </g>
+  <title>UAH Symbol</title>
+  <path style="fill: rgb(255, 255, 255); stroke-width: 25; paint-order: stroke; stroke-dasharray: 0, 0; stroke: rgb(0, 0, 0);" d="M 225 400 C 150 400 75 325 75 300 C 75 275 110 265 150 250 L 75 250 L 75 240 L 175 240 C 215 230 235 220 265 210 L 75 210 L 75 200 L 295 200 C 325 185 360 170 360 150 C 360 135 300 65 225 65 C 160 65 125 100 125 100 L 100 100 C 100 100 150 50 225 50 C 300 50 375 125 375 150 C 375 170 355 185 320 200 L 375 200 L 375 210 L 295 210 C 270 220 245 230 210 240 L 375 240 L 375 250 L 180 250 C 130 265 90 285 90 300 C 90 325 165 385 225 385 C 285 385 325 350 325 350 C 325 350 350 350 350 350 C 350 350 300 400 225 400 L 225 400 L 225 400 Z">
+    <title>UA Hryvnia Currency Symbol</title>
+  </path>
+</svg>
